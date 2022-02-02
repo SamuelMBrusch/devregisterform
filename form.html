@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Dongle:wght@300&family=Neonderthaw&family=Open+Sans+Condensed:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="titles">
+        <h1 id="main-title">Cadastro de Desenvolvedores</h1>
+        <h2 id="subtitle">Preencha o formulário abaixo</h2>
+    </div>
+    <form>
+        <fieldset class="group">
+            <div class="field">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome"placeholder="Seu nome" id="nome" required>
+            </div>
+            <div class="field">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" placeholder="Seu sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Seu email" id="email" required>
+        </div>
+        
+        <div class="field">
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend"> Front-End
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend"> Back-End
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack"> Fullstack
+            </label>
+        </div>
+        <div class="nivel">
+            <label for="senioridade">Senioridade</label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+        <br>
+        <fieldset>
+            <div class="main-checkbox">
+                <label class="title-checkbox">Selecione as tecnologias que você utiliza</label><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="html">
+                <label for="tecnologia1"> HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="javascript">
+                <label for="tecnologia2"> JavaScript</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="css">
+                <label for="tecnologia3"> CSS</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="python">
+                <label for="tecnologia4"> Python</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="react-native">
+                <label for="tecnologia5"> React-Native</label>
+            </div> 
+        </fieldset>
+        <br>
+        <button type="submit" class="button">Concluir cadastro</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main-title{
+    font-family: 'Neonderthaw', cursive;
+    color: #380861;
+    font-size: 50px;
+    left: 50%;
+    right: 50%;
+}
+
+#subtitle{
+    font-family: 'alata', sans-serif;
+    color: #380861;
+    margin-left: 10%;
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background-color: #f0f8ff;
+    color: #59429d;
+    font-family: 'alata',sans-serif;
+    font-size: 18px;
+    margin-left: 30%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+    padding: 2px
+}
+
+.field{
+    margin-bottom: 1em;
+}
+
+.field label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+fieldset .group .field{
+    float: left;
+    margin-right: 1em;
+}
+
+.field input[type="text"], .field input[type="email"], .field textarea {
+    font-size:15px;
+    padding: 0.4em;
+    border: 1px solid #59429d;
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
+    display: block;
+}
+
+#senioridade{
+    display: block;
+    padding: 0.3em;
+    font-size: 15px;
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+.field select option{
+    padding-right: 1em;
+}
+
+.field input:focus, .field select:focus, .field textarea:focus{
+    background-color: #e0e0f8;
+}
+
+
+.button{
+    font-size:0.8em;
+    background: indigo;
+    border: 0;
+    margin-bottom:1em;
+    color: whitesmoke;
+    padding: 5px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px,1px rgba(0, 0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform:translate(-50%, -50%)
+}
+
+.button:hover{
+    background: #dda0ff;
+    box-shadow: inset 2px, 2px, 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+    display: inline-block;
+}
